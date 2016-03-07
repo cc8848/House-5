@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var video = $('video')[0],
 		vol,
-		currLi = -1,
+		currLi = 0,
 		timer;
 	video.volume = 0.5;
 	vol = video.volume * 100;
@@ -58,11 +58,14 @@ $(document).ready(function(){
 			}
 		});
 	});
-	$('.block li').bind({
-		'mouseover':function(){
-			$(this).css('background-color','rgba(0,0,0,0.2)').siblings().css('background-color','rgba(255,255,255,0.2)');
-		}
-	});
+	$('.block li').each(function(index){
+		$(this).bind({
+			'mouseover':function(){
+				$(this).addClass('hov').siblings().removeClass('hov');
+				currLi = index;
+			}
+		});
+	})
 	$('.change li').each(function(index){
 		$(this).click(function(){
 
