@@ -201,10 +201,10 @@ $(document).ready(function(){
 	$('.sub').click(function(){
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
-			$('.block li:eq(0)').find('span:eq(1)').text('On');
+			$('.block li:eq(0)').find('span:eq(1)').text('Off');
 		}else{
 			$(this).addClass('active');
-			$('.block li:eq(0)').find('span:eq(1)').text('Off');
+			$('.block li:eq(0)').find('span:eq(1)').text('On');
 		}
 	});
 })
