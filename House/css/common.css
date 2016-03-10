@@ -7,11 +7,6 @@
 	height: 600px;
 	background-color: #000;
 }
-#ok img{
-	width: 653px;
-	height: 346px;
-	margin: 50px;
-}
 #ok area{
 	cursor: pointer;
 	outline: none;

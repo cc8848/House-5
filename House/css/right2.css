@@ -64,9 +64,13 @@ a{text-decoration: none;}
 .temp{
 	line-height: 40px;
 }
+.temp span:nth-child(1){
+	width: 50px;
+	display: inline-block;
+}
 .temp sup{
 	font-size: 20px;
-	margin: 0 0 0 5px;
+	margin: 0 0 0 3px;
 }
 
 .control{
